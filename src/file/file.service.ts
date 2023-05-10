@@ -1,10 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { CreateFileDto } from './dto/create-file.dto';
 import { UpdateFileDto } from './dto/update-file.dto';
+import { AppModule } from 'src/app.module';
 
 @Injectable()
 export class FileService {
+  
   create(createFileDto: CreateFileDto) {
+    console.log(AppModule.openai);
     return 'This action adds a new file';
   }
 
