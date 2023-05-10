@@ -1,6 +1,11 @@
-# compiled output
 /dist
 /node_modules
+/uploads
+
+postgres/
+
+.env
+
 
 # Logs
 logs
